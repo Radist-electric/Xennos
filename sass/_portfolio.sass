@@ -1,0 +1,23 @@
+.portfolio
+    height: 60rem
+    &__title
+        margin-bottom: 7rem
+    &__list
+        display: flex
+        justify-content: space-between
+        font-size: 2.4rem
+        &__item
+            height: 40rem
+            width: 40rem
+            &__content
+                height: 30rem
+                width: 100%
+                background-color: lightyellow
+            &__button
+                display: block
+                margin: 1rem auto
+                height: 6rem
+                width: 19rem
+                @include btn()
+                font-size: 3rem
+                color: $primary-color

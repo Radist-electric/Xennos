@@ -1,0 +1,84 @@
+.header
+    height: 77rem
+    background: #fff url(../img/header/bg-header.png) top center no-repeat
+    background-size: cover
+    color: $primary-color
+    a
+        font-size: 1.9rem
+        @include font-nav()
+        text-transform: uppercase
+        text-decoration: none
+        color: $primary-color  
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 16rem
+    &__logo
+        margin-left: 9rem
+        margin-right: 1rem
+    &__icons
+        margin-right: 7.5rem
+        img
+            height: 4.5rem
+            margin-left: 1rem
+    &__title
+        position: relative
+        margin-right: 7.5rem
+        margin-top: 3rem
+        padding-right: 3rem
+        text-align: right
+        img
+            position: absolute
+            top: -3rem
+            right: 0
+            height: 3.4rem
+    &__bottom
+        display: flex
+        justify-content: space-between
+        margin-top: 6.5rem
+        &__img
+            position: relative
+            img
+                position: absolute
+        &__advert
+            position: relative
+            width: 58rem
+            font-size: 4rem
+            color: 
+            img
+                position: absolute
+        &__list
+            margin-bottom: 6rem
+            li
+                position: relative
+                padding-left: 5rem
+                margin-bottom: 0.5rem
+                &::before
+                    content: ''
+                    position: absolute
+                    top: -0.5rem
+                    left: 0
+                    height: 4rem
+                    width: 5rem
+                    background-image: url(../img/header/check.png)
+                    background-position: center
+                    background-repeat: no-repeat
+        &__sheet
+            top: -20rem
+            left: -26rem
+        &__laptop
+            top: 0
+            left: 2rem
+        &__arrow
+            top: 16rem
+            left: -15rem
+        &__pen
+            top: 5rem
+            right: 3rem
+.nav
+    display: flex
+    &__item
+        margin: 0 2.4rem
+
+    
