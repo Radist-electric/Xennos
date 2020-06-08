@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xennos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .site-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+        .order-main {
+            order: 1
+        }
+        .order-fill-out {
+            order: 2
+        }
+    </style>
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -48,9 +60,9 @@
                         <li>Сео</li>
                         <li>Контекстная реклама</li>
                     </ul>
-                    <img src="/img/header/arrow.png" alt="arrow" class="header__bottom__arrow">
-                    <img src="/img/header/pen.png" alt="pen" class="header__bottom__pen">
-                    <button class="btn">
+                    <img src="img/header/arrow.png" alt="arrow" class="header__bottom__arrow">
+                    <img src="img/header/pen.png" alt="pen" class="header__bottom__pen">
+                    <button class="btn btn_primary">
                         написать нам
                     </button>
                 </div>
@@ -60,7 +72,51 @@
 
     <div class="site-wrap">
 
-        <!-- about -->
+        <main class="main order-main">
+            <div class="container">
+                <p class="main__text">
+                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Составитель
+                    скатился послушавшись гор все приставка ему семантика текст! Себя он пор переписывается предложения!
+                    Рекламных прямо по всей ведущими строчка имени деревни океана буквоград журчит живет подзаголовок
+                    ему сих, его языком последний переписали вскоре, власти своих ты рот образ алфавит рыбного.
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, expedita culpa? Nemo assumenda
+                    delectus modi blanditiis fugiat molestias aliquam vero optio eaque nulla iure, commodi architecto
+                    neque tempore consectetur, nobis vel praesentium, numquam suscipit. Nam voluptate praesentium ab
+                    cupiditate obcaecati harum vero, iusto animi saepe eos illum sunt iste, sed vel fugit ex odit
+                    veniam! Voluptatibus aliquid dignissimos nesciunt provident ipsa id sapiente eligendi cupiditate
+                    eaque laboriosam, itaque officiis. Saepe facere nulla maiores iusto porro praesentium placeat veniam
+                    minima, assumenda adipisci vel nobis natus doloremque possimus dolorum fugit ab repellat ullam
+                    laboriosam. Alias cumque quisquam, aliquid inventore ullam rerum harum.</p>
+                <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Он напоивший
+                    языкового даже скатился, пунктуация предложения запятой щеке lorem ручеек это языком мир. Щеке
+                    безорфографичный ipsum великий знаках, заглавных он, за инициал вершину, большого она они продолжил
+                    запятых там мир переулка единственное необходимыми которой дороге взгляд правилами! Океана его
+                    продолжил курсивных точках над. Образ на берегу но деревни осталось его рыбными маленькая
+                    предупреждал даже. Приставка ему великий снова. Взобравшись последний, он проектах гор букв взгляд
+                    ручеек жаренные за предложения на берегу свой снова злых это но, большой коварных. За последний
+                    страна возвращайся безорфографичный своего от всех реторический они подзаголовок, все послушавшись
+                    образ.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, expedita culpa? Nemo assumenda
+                    delectus modi blanditiis fugiat molestias aliquam vero optio eaque nulla iure, commodi architecto
+                    neque tempore consectetur, nobis vel praesentium, numquam suscipit. Nam voluptate praesentium ab
+                    cupiditate obcaecati harum vero, iusto animi saepe eos illum sunt iste, sed vel fugit ex odit
+                    veniam! Voluptatibus aliquid dignissimos nesciunt provident ipsa id sapiente eligendi cupiditate
+                    eaque laboriosam, itaque officiis. Saepe facere nulla maiores iusto porro praesentium placeat veniam
+                    minima, assumenda adipisci vel nobis natus doloremque possimus dolorum fugit ab repellat ullam
+                    laboriosam. Alias cumque quisquam, aliquid inventore ullam rerum harum.</p>
+                <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Он напоивший
+                    языкового даже скатился, пунктуация предложения запятой щеке lorem ручеек это языком мир. Щеке
+                    безорфографичный ipsum великий знаках, заглавных он, за инициал вершину, большого она они продолжил
+                    запятых там мир переулка единственное необходимыми которой дороге взгляд правилами! Океана его
+                    продолжил курсивных точках над. Образ на берегу но деревни осталось его рыбными маленькая
+                    предупреждал даже. Приставка ему великий снова. Взобравшись последний, он проектах гор букв взгляд
+                    ручеек жаренные за предложения на берегу свой снова злых это но, большой коварных. За последний
+                    страна возвращайся безорфографичный своего от всех реторический они подзаголовок, все послушавшись
+                    образ.</p>
+            </div>
+        </main> <!-- main -->
+
         <section class="about">
             <div class="container">
                 <div class="about__content">
@@ -71,93 +127,113 @@
                         проекта.
                     </p>
                     <div class="about__discount">
-                        <img src="" alt="discount">
+                        <img src="img/about/10per.png" alt="discount 10%">
                         <p>Пройди опрос получи скидку</p>
                     </div>
-                    <button class="btn header__btn">
+                    <button class="btn btn_light">
                         пройти опрос
                     </button>
                 </div>
             </div>
+            <img src="img/about/about-wire.png" alt="a part of wire" class="about__img about__img_wire">
+            <img src="img/about/about-hand.png" alt="hand with mouse" class="about__img about__img_hand">
+            <img src="img/about/about-newspaper.png" alt="newspaper" class="about__img about__img_newspaper">
+            <img src="img/scotch-brown.png" alt="scotch" class="about__img about__img_scotch">
         </section> <!-- about -->
 
-        <!-- need -->
         <section class="need">
             <div class="container">
                 <h2 class="need__title">Для чего вам сайт?</h2>
-                <button class="btn header__btn">
+                <ul class="need__content">
+                    <li>
+                        <p>Многофункциональный офис. Это лицо фирмы, которое первым увидит будущий покупатель. На сайте можно разместить все, что требуется для успешной работы – информационный, справочный или рекламный контент, структурированный каталог товаров или услуг, контактные и геолокационные данные</p>
+                    </li>
+                    <li>
+                        <p>Возможность расширения. Необходимо модернизировать дизайн или навигацию, расширить функциональное наполнение? В интернет-пространстве возможно все!</p>
+                    </li>
+                    <li>
+                        <p>Увеличенный кредит доверия. Если клиент не может найти реквизиты компании и ознакомиться с ее деятельности в виртуальном формате, то вотум доверия резко сокращается. А ваши конкуренты на своих сайтах не дремлют – XXI век, господа!</p>
+                    </li>
+                    <li>
+                        <p>Круглосуточный доступ. Воплотите мечту любого работодателя – информация 24/7/365 дней в году без учета выходных и праздников. В реальной жизни это невозможно, а на интернет-сайте – пожалуйста</p>
+                    </li>
+                    <li>
+                        <p>Широкий охват аудитории. У виртуального офиса нет привязки относительно локации – ваша торговая площадка – весь мир</p>
+                    </li>
+                    <img src="img/scotch-grey.png" alt="scotch grey" class="need__content__img need__content__img_scotch">
+                    <img src="img/scotch-cross.png" alt="scotch cross" class="need__content__img need__content__img_cross">
+                </ul>
+                <button class="btn btn_primary need__btn">
                     написать нам
                 </button>
             </div>
         </section> <!-- need -->
 
-        <!-- work -->
-        <section class="work">
+         <section class="work">
             <div class="container">
                 <h3 class="work__title">Как мы работаем</h3>
-                <ol class="work__list">
+                <ul class="work__list">
                     <li class="work__list__item">
-                        <!-- <img src="" alt="sticker"> -->
                         <p><span>1.</span>Договор</p>
                     </li>
                     <li class="work__list__item">
-                        <!-- <img src="" alt="sticker"> -->
                         <p><span>2.</span>Бриф</p>
                     </li>
                     <li class="work__list__item">
-                        <!-- <img src="" alt="sticker"> -->
                         <p><span>3.</span>Обсуждение</p>
                     </li>
                     <li class="work__list__item">
-                        <!-- <img src="" alt="sticker"> -->
                         <p><span>4.</span>Дизайн</p>
                     </li>
                     <li class="work__list__item">
-                        <!-- <img src="" alt="sticker"> -->
                         <p><span>5.</span>Сдача проекта</p>
                     </li>
                     <li class="work__list__item">
-                        <!-- <img src="" alt="sticker"> -->
                         <p><span>6.</span>Оплата</p>
                     </li>
-                </ol>
+                    <img src="img/work/work-arrows.png" alt="arrows" class="work__list__arrows">
+                </ul>
             </div>
         </section> <!-- work -->
 
-        <!-- portfolio -->
         <section class="portfolio">
+            <img src="img/portfolio/portfolio-wire.png" alt="portfolio wire" class="portfolio__wire">
             <div class="container">
                 <h3 class="portfolio__title">Наше портфолио</h3>
                 <ul class="portfolio__list">
                     <li class="portfolio__list__item">
-                        <div class="portfolio__list__item__content"></div>
+                        <div class="portfolio__list__item__content">
+                            <div class="portfolio__list__item__example"></div>
+                        </div>
                         <button class="portfolio__list__item__button">Подробнее</button>
                     </li>
                     <li class="portfolio__list__item">
-                        <div class="portfolio__list__item__content"></div>
+                        <div class="portfolio__list__item__content">
+                            <div class="portfolio__list__item__example"></div>
+                        </div>
                         <button class="portfolio__list__item__button">Подробнее</button>
                     </li>
                     <li class="portfolio__list__item">
-                        <div class="portfolio__list__item__content"></div>
+                        <div class="portfolio__list__item__content">
+                            <div class="portfolio__list__item__example"></div>
+                        </div>
                         <button class="portfolio__list__item__button">Подробнее</button>
                     </li>
                 </ul>
             </div>
         </section> <!-- portfolio -->
 
-        <!-- dev -->
         <section class="dev">
             <div class="container">
                 <h2 class="dev__title">РАЗРАБОТКА САЙТОВ: ИНВЕСТИРУЙ В БУДУЩЕЕ</h2>
                 <p class="dev__text">Грамотная разработка сайта – весомый вклад в процветание любимого дела. С его
                     помощью можно
                     значительно улучшить продажи, создать новый бизнес или оптимизировать уже существующий, отчетливо
-                    заявить о себе целевой аудитории.Доказано: компании, пренебрегающие созданием собственного сайта,
+                    заявить о себе целевой аудитории. Доказано: компании, пренебрегающие созданием собственного сайта,
                     теряют до 25 % потенциальных клиентов</p>
             </div>
         </section> <!-- dev -->
 
-        <!-- prices -->
         <section class="prices">
             <div class="container">
                 <div class="prices__block1">
@@ -253,8 +329,8 @@
                     </div> <!-- prices__block2 -->
                     <div class="prices__buttons">
                         <div class="prices__buttons__item">
-                            <button>Заполнить бриф</button>
-                            <button>Написать нам</button>
+                            <button class="btn btn_primary">Заполнить бриф</button>
+                            <button class="btn btn_primary">Написать нам</button>
                         </div>
                     </div>
                 </div>
@@ -347,57 +423,13 @@
             </div>
         </section> <!-- feedback -->
 
-        <main class="seo">
-            <div class="container">
-                <p class="seo__text">
-                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Составитель
-                    скатился послушавшись гор все приставка ему семантика текст! Себя он пор переписывается предложения!
-                    Рекламных прямо по всей ведущими строчка имени деревни океана буквоград журчит живет подзаголовок
-                    ему сих, его языком последний переписали вскоре, власти своих ты рот образ алфавит рыбного.
-                </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, expedita culpa? Nemo assumenda
-                    delectus modi blanditiis fugiat molestias aliquam vero optio eaque nulla iure, commodi architecto
-                    neque tempore consectetur, nobis vel praesentium, numquam suscipit. Nam voluptate praesentium ab
-                    cupiditate obcaecati harum vero, iusto animi saepe eos illum sunt iste, sed vel fugit ex odit
-                    veniam! Voluptatibus aliquid dignissimos nesciunt provident ipsa id sapiente eligendi cupiditate
-                    eaque laboriosam, itaque officiis. Saepe facere nulla maiores iusto porro praesentium placeat veniam
-                    minima, assumenda adipisci vel nobis natus doloremque possimus dolorum fugit ab repellat ullam
-                    laboriosam. Alias cumque quisquam, aliquid inventore ullam rerum harum.</p>
-                <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Он напоивший
-                    языкового даже скатился, пунктуация предложения запятой щеке lorem ручеек это языком мир. Щеке
-                    безорфографичный ipsum великий знаках, заглавных он, за инициал вершину, большого она они продолжил
-                    запятых там мир переулка единственное необходимыми которой дороге взгляд правилами! Океана его
-                    продолжил курсивных точках над. Образ на берегу но деревни осталось его рыбными маленькая
-                    предупреждал даже. Приставка ему великий снова. Взобравшись последний, он проектах гор букв взгляд
-                    ручеек жаренные за предложения на берегу свой снова злых это но, большой коварных. За последний
-                    страна возвращайся безорфографичный своего от всех реторический они подзаголовок, все послушавшись
-                    образ.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, expedita culpa? Nemo assumenda
-                    delectus modi blanditiis fugiat molestias aliquam vero optio eaque nulla iure, commodi architecto
-                    neque tempore consectetur, nobis vel praesentium, numquam suscipit. Nam voluptate praesentium ab
-                    cupiditate obcaecati harum vero, iusto animi saepe eos illum sunt iste, sed vel fugit ex odit
-                    veniam! Voluptatibus aliquid dignissimos nesciunt provident ipsa id sapiente eligendi cupiditate
-                    eaque laboriosam, itaque officiis. Saepe facere nulla maiores iusto porro praesentium placeat veniam
-                    minima, assumenda adipisci vel nobis natus doloremque possimus dolorum fugit ab repellat ullam
-                    laboriosam. Alias cumque quisquam, aliquid inventore ullam rerum harum.</p>
-                <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Он напоивший
-                    языкового даже скатился, пунктуация предложения запятой щеке lorem ручеек это языком мир. Щеке
-                    безорфографичный ipsum великий знаках, заглавных он, за инициал вершину, большого она они продолжил
-                    запятых там мир переулка единственное необходимыми которой дороге взгляд правилами! Океана его
-                    продолжил курсивных точках над. Образ на берегу но деревни осталось его рыбными маленькая
-                    предупреждал даже. Приставка ему великий снова. Взобравшись последний, он проектах гор букв взгляд
-                    ручеек жаренные за предложения на берегу свой снова злых это но, большой коварных. За последний
-                    страна возвращайся безорфографичный своего от всех реторический они подзаголовок, все послушавшись
-                    образ.</p>
-            </div>
-        </main> <!-- seo -->
 
-        <section class="form">
+        <section class="fill-out order-fill-out">
             <div class="container">
-                <img src="" alt="hand with pen" class="form__hand">
-                <div class="form__form">
+                <img src="" alt="hand with pen" class="fill-out__hand">
+                <div class="fill-out__form">
                     <h4>Заполните свои данные и мы свяжемся с вами в самое ближайшее время</h4>
-                    <form action="#">
+                    <form action="#" class="form">
                         <input type="text" placeholder="Ваше имя">
                         <input type="text" placeholder="Ваш e-mail">
                         <button class="form__button">Отправить</button>
@@ -405,7 +437,7 @@
                     </form>
                 </div>
             </div>
-        </section> <!-- form -->
+        </section> <!-- fill-out -->
 
 
     </div> <!-- site-wrap -->
@@ -421,6 +453,14 @@
             <p class="footer__address">г. Алматы ул. Желтоксана 17 офис 312</p>
         </div>
     </footer>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 
 </html>

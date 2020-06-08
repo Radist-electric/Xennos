@@ -1,19 +1,43 @@
 .work
-    height: 50rem
+    z-index: 2
+    height: 75rem
+    margin-top: -20rem
+    padding-top: 24rem
+    background: transparent url(../img/work/bg-work.png) top center no-repeat
+    background-size: cover
     &__title
         margin-bottom: 6rem
+        color: $light-color
     &__list
+        position: relative
         display: flex
         justify-content: space-between
-        font-size: 2.4rem
+        width: 126rem
+        margin: 0 auto
+        font-size: 2.7rem
         &__item
             display: flex
             justify-content: center
             align-items: center
-            height: 19rem
+            height: 21rem
             width: 19rem
-            background-color: lightyellow
+            padding: 3rem 2rem 0
+            background: transparent url(../img/work/work-sticker.png) center center no-repeat
+            background-size: cover
+            text-align: center
             span
                 display: block
                 width: 100%
                 text-align: center
+        li
+            &:nth-child(odd)
+                transform: rotate(2deg)
+            &:nth-child(even)
+                transform: rotate(-2deg)
+
+                
+        &__arrows
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)

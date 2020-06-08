@@ -4,6 +4,7 @@
 
 *
     box-sizing: border-box
+    outline: none
 html
     font-size: 10px
     cursor: url(../img/cursor.png), default
@@ -11,6 +12,7 @@ body
     @include font-main()
     color: $primary-color
     font-size: 3rem
+    overflow-x: hidden
 a, button
     &:hover
         cursor: url(../img/cursor.png), default
@@ -19,11 +21,24 @@ a, button
     margin: 0 auto
     // background-color: rgba(0, 255, 0, 0.1)
 .btn
+    z-index: 3
+    position: relative
+    height: 9rem
     width: 48rem
+    padding: 0 0 1rem
+    transform: scale(1)
     @include btn()
-    background-image: url(../img/button-red.png)
-    color: $secondary-color
+    background-size: contain
     font-size: 4.8rem
+    transition: all 200ms
+    &:hover
+        transform: scale(1.01)
+    &_primary
+        background: transparent url(../img/button-red.png) center center no-repeat
+        color: $secondary-color
+    &_light
+        background: transparent url(../img/button-light.png) center center no-repeat
+        color: $light-color
 
 h1, h2, h3, h4, h5
     @include font-nav()
@@ -41,6 +56,7 @@ h4
 
 
 
+
 @import "header"
 @import "about"
 @import "need"
@@ -48,6 +64,11 @@ h4
 @import "portfolio"
 @import "dev"
 @import "prices"
+@import "advance"
+@import "why"
+@import "feedback"
+@import "main"
+@import "fill-out"
 @import "footer"
 @import "media"
 

@@ -1,23 +1,44 @@
 .portfolio
-    height: 60rem
+    position: relative
+    height: 94rem
+    padding-top: 32rem
+    margin-top: -27rem
+    background: transparent url(../img/portfolio/bg-portfolio.png) top center no-repeat
+    background-size: cover
     &__title
         margin-bottom: 7rem
     &__list
-        display: flex
-        justify-content: space-between
         font-size: 2.4rem
         &__item
-            height: 40rem
-            width: 40rem
             &__content
-                height: 30rem
-                width: 100%
-                background-color: lightyellow
+                height: 29rem
+                width: 42rem
+                padding-top: 2.8rem
+                background: transparent url(../img/portfolio/portfolio-screen.png) center center no-repeat
+                background-size: contain
+            &__example
+                height: 21.7rem
+                width: 33.5rem
+                margin-left: 4rem
+                background-color: #fff
+                border-radius: 1rem
             &__button
                 display: block
-                margin: 1rem auto
+                margin: 2rem auto
                 height: 6rem
                 width: 19rem
-                @include btn()
+                transform: scale(1)
+                background: transparent url(../img/portfolio/portfolio-button.png) center center no-repeat
+                background-size: contain
+                border: none
+                @include font-main()
                 font-size: 3rem
                 color: $primary-color
+                transition: all 200ms
+                &:hover
+                    transform: scale(1.01)
+    &__wire
+        position: absolute
+        top: 55%
+        left: 0
+        width: 100%
