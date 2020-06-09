@@ -1,0 +1,27 @@
+.footer
+    padding: 10rem 0
+    background-color: $footer-color
+    color: $light-color
+    @include futura()
+    a
+        color: $light-color
+        transition: all 300ms
+        text-decoration: none
+        &:hover
+            color: $primary-color
+    &__icons
+        display: flex
+        justify-content: center
+        &__img
+            height: 14rem
+            width: 14rem
+            margin: 0 3.5rem
+            transform: scale(1.0)
+            transition: all 300ms
+            &:hover
+                transform: scale(1.05)
+                filter: brightness(80%)
+    &__contacts
+        display: block
+        margin: 5rem auto
+        text-align: center

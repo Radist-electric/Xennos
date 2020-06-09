@@ -1,8 +1,145 @@
 .prices
+    z-index: 1
+    position: relative
     height: 202rem
     padding-top: 13rem
     background: transparent url(../img/prices/bg-prices.png) top center no-repeat
     background-size: cover
     color: $light-color
-    h2
-        font-size: 3rem
+    font-size: 2.8rem
+    line-height: 3.5rem
+    &__grid
+        z-index: 0
+        position: absolute
+        top: 12rem
+        left: 50%
+        transform: translateX(-50%)
+        height: 148rem
+        width: 122rem
+    li
+        position: relative
+        padding-left: 2.5rem
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+            height: 2rem
+            width: 2rem
+            background-image: url(../img/prices/prices-check.png)
+            background-position: center
+            background-repeat: no-repeat
+    &__block1
+        position: relative
+        display: flex
+        justify-content: space-between
+        padding: 0 5rem
+        &__item
+            width: 23%
+            &:nth-child(4)
+                border-right: none
+        &__title, &__price
+            display: flex
+            font-size: 3rem
+            text-align: left
+        &__title
+            height: 10rem
+            padding-left: 3rem
+        &__desc
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 44rem
+            padding: 1rem 3rem 4rem
+        &__price
+            justify-content: center
+            align-items: center
+            height: 5rem
+            color: $secondary-color
+            @include font-nav()
+            font-weight: 900
+        &__scotch
+            position: absolute
+            top: -12rem
+            right: 5rem
+            transform: rotate(-40deg)
+    &__add
+        position: relative
+        &__title
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 8rem
+            width: 66rem
+            margin: 0 auto
+            font-size: 3.8rem
+            text-transform: none
+            color: $secondary-color
+        &__header
+            display: flex
+            justify-content: space-between
+            padding: 0 7rem
+            &__title
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 11rem
+                width: 22%
+                padding: 0 2rem
+                text-align: center
+                &:last-child
+                    border-right: none
+        &__scotch
+            position: absolute
+            top: 29rem
+            left: 3rem
+            transform: rotate(-23deg)
+    &__block2
+        display: flex
+        justify-content: space-between
+        padding: 0 10rem
+        &__item
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 50%
+            &:first-child
+                align-items: flex-end
+                .prices__block2__price
+                    justify-content: flex-end
+                    padding-right: 9rem
+            &:last-child
+                align-items: flex-start
+                .prices__block2__price
+                    justify-content: flex-start
+                    padding-left: 6rem
+        &__top
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            height: 59rem
+            width: 38rem
+            padding: 0 3rem
+        &__title
+            display: flex
+            align-items: center
+            height: 15rem
+            padding-top: 2rem
+            padding-right: 5rem
+            font-size: 3rem
+            line-height: 3.5rem
+            text-align: left
+        &__list
+            padding-top: 4rem
+        &__price
+            display: flex
+            align-items: center
+            height: 10rem
+            @include font-nav()
+            text-transform: uppercase
+            color: $secondary-color
+        &__button
+            padding: 10rem 3rem 0
+
+
