@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xennos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <style>
         .site-wrap {
             display: flex;
@@ -20,8 +21,22 @@
             order: 2
         }
     </style>
+    <!-- <script>
+        let a = document.fontSize;
+        let windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        setHtmlSize();
+
+        function setHtmlSize() {
+            console.log(a);
+            console.log(windowWidth);
+        }
+        window.addEventListener('resize', function () {
+            windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            setHtmlSize();
+        });
+    </script> -->
     <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v0.91">
 </head>
 
 <body>
@@ -64,7 +79,7 @@
                     </ul>
                     <img src="img/header/arrow.png" alt="arrow" class="header__bottom__arrow">
                     <img src="img/header/pen.png" alt="pen" class="header__bottom__pen">
-                    <button class="btn btn_primary">
+                    <button class="btn btn_primary btn_popup">
                         написать нам
                     </button>
                 </div>
@@ -156,7 +171,7 @@
                         <img src="img/about/10per.png" alt="discount 10%">
                         <p>Пройди опрос получи скидку</p>
                     </div>
-                    <button class="btn btn_light">
+                    <button class="btn btn_light btn_popup">
                         пройти опрос
                     </button>
                 </div>
@@ -200,7 +215,7 @@
                     <img src="img/scotch-cross.png" alt="scotch cross"
                         class="need__content__img need__content__img_cross">
                 </ul>
-                <button class="btn btn_primary need__btn">
+                <button class="btn btn_primary need__btn btn_popup">
                     написать нам
                 </button>
             </div>
@@ -362,7 +377,7 @@
                             </div>
                             <p class="prices__block2__price">От 100 000р</p>
                             <div class="prices__block2__button">
-                                <button class="btn btn_primary">Заполнить бриф</button>
+                                <button class="btn btn_primary btn_popup">Заполнить бриф</button>
                             </div>
                         </div>
                         <div class="prices__block2__item">
@@ -373,7 +388,7 @@
                             </div>
                             <p class="prices__block2__price">Договорная</p>
                             <div class="prices__block2__button">
-                                <button class="btn btn_primary">Написать нам</button>
+                                <button class="btn btn_primary btn_popup">Написать нам</button>
                             </div>
                         </div>
                     </div> <!-- prices__block2 -->
@@ -514,7 +529,7 @@
                     <form action="#">
                         <input type="text" placeholder="Ваше имя">
                         <input type="text" placeholder="Ваш e-mail">
-                         <button class="btn btn_primary" type="submit">
+                        <button class="btn btn_primary" type="submit">
                             отправить
                         </button>
                         <img src="img/form/form-arrow.png" alt="arrow" class="fill-out__form__arrow">
@@ -528,9 +543,12 @@
     <footer class="footer">
         <div class="container">
             <ul class="footer__icons">
-                <li class="footer__icons__img"><a href="https://vk.com" target="_blank"><img src="img/social/twitter.png" alt="twitter"></a></li>
-                <li class="footer__icons__img"><a href="https://vk.com" target="_blank"><img src="img/social/facebook.png" alt="facebook"></a></li>
-                <li class="footer__icons__img"><a href="https://vk.com" target="_blank"><img src="img/social/vk.png" alt="vkontakte"></a></li>
+                <li class="footer__icons__img"><a href="https://vk.com" target="_blank"><img
+                            src="img/social/twitter.png" alt="twitter"></a></li>
+                <li class="footer__icons__img"><a href="https://vk.com" target="_blank"><img
+                            src="img/social/facebook.png" alt="facebook"></a></li>
+                <li class="footer__icons__img"><a href="https://vk.com" target="_blank"><img src="img/social/vk.png"
+                            alt="vkontakte"></a></li>
             </ul>
             <a class="footer__contacts footer__phone" href="tel:+77073332344">+7 (707) 333-23-44</a>
             <a class="footer__contacts footer__email" href="mailto:info@xennos.ru">info@xennos.ru</a>
@@ -546,17 +564,21 @@
     <script type="text/javascript" src="js/main.js"></script>
 
 
-    <!-- <div class="site-form">
-        <h4>Заполните свои данные и мы свяжемся с вами в самое ближайшее время</h4>
-        <form action="#">
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш e-mail">
-             <button class="btn btn_primary" type="submit">
-                отправить
-            </button>
-            <!-- <img src="" alt="arrow" class="form__arrow"> -->
-        </form>
-    </div> -->
+    <div class="popup">
+        <div class="popup__form">
+            <button class="popup__form__close">&times;</button>
+            <h4>Заполните свои данные и мы свяжемся с вами в самое ближайшее время</h4>
+            <form action="#">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш e-mail">
+                <button class="popup__form__btn" type="submit">
+                    отправить
+                </button>
+                <img src="img/form/form-arrow.png" alt="arrow" class="popup__form__arrow">
+            </form>
+        </div>
+    </div>
+
 
 </body>
 
