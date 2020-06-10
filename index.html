@@ -24,7 +24,6 @@
     <script>
         let windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         setHtmlSize();
-
         function setHtmlSize() {
             if (windowWidth < 1400 && windowWidth >= 576) {
                 document.getElementsByTagName('html')[0].style.fontSize = (windowWidth / 1400) * 10 + "px";
@@ -33,7 +32,6 @@
             } else if (windowWidth < 576) {
                 document.getElementsByTagName('html')[0].style.fontSize = (windowWidth / 576) * 10 + "px";
             };
-            console.log((windowWidth / 1400) * 10 + "px");
         };
         window.addEventListener('resize', function () {
             windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body
@@ -42,7 +40,7 @@
         });
     </script>
     <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet" href="css/style.css?v0.93">
+    <link rel="stylesheet" href="css/style.css?v0.95">
 </head>
 
 <body>
@@ -188,7 +186,8 @@
                         проекта.
                     </p>
                     <div class="about__discount">
-                        <img src="img/about/10per.png" alt="discount 10%">
+                        <img class="about__discount_desktop" src="img/about/10per.png" alt="discount 10%">
+                        <img class="about__discount_mobile" src="img/about/10per-mobile.png" alt="discount 10%">
                         <p>Пройди опрос получи скидку</p>
                     </div>
                     <button class="btn btn_light btn_popup">
@@ -578,8 +577,10 @@
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 

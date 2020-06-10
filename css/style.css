@@ -452,6 +452,14 @@ h4 {
   width: 16rem;
 }
 
+.about__discount_desktop {
+  display: block;
+}
+
+.about__discount_mobile {
+  display: none;
+}
+
 .about__discount p {
   width: 30rem;
   margin-left: 2rem;
@@ -1465,7 +1473,9 @@ h4 {
   background-color: transparent;
   font-size: 6rem;
   color: #fdfdfd;
-  cursor: pointer;
+}
+
+.popup__form__close:active, .popup__form__close:focus {
   outline: none;
 }
 
@@ -1646,5 +1656,28 @@ h4 {
   .about__content {
     width: 100%;
     padding: 0 6rem;
+  }
+  .about__content .btn {
+    background: transparent url(../img/button-red.png) center center no-repeat;
+    color: #e00606;
+  }
+  .about__discount {
+    margin: 15rem 0 2rem;
+    color: #e00606;
+  }
+  .about__discount_desktop {
+    display: none;
+  }
+  .about__discount_mobile {
+    display: block;
+  }
+  .need {
+    padding-top: 45rem;
+  }
+  .popup__form {
+    width: 57rem;
+  }
+  .popup__form__close {
+    right: 1rem;
   }
 }
