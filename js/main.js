@@ -34,8 +34,8 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button class="arrow feedback__slider__arrow_prev"><img src="img/feedback/arrow-prev.png" alt="arrow prev"></button>',
-        nextArrow: '<button class="arrow feedback__slider__arrow_next"><img src="img/feedback/arrow-next.png" alt="arrow next"></button>',
+        prevArrow: '<button class="arrow feedback__slider__arrow feedback__slider__arrow_prev"><img src="img/feedback/arrow-prev.png" alt="arrow prev"></button>',
+        nextArrow: '<button class="arrow feedback__slider__arrow feedback__slider__arrow_next"><img src="img/feedback/arrow-next.png" alt="arrow next"></button>',
         responsive: [
             {
                 breakpoint: 576,

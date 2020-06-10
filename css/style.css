@@ -61,7 +61,6 @@ a:hover, button:hover {
   border: none;
   font-family: "JakobExtraCTT", serif;
   text-align: center;
-  background-size: contain;
   font-size: 4.8rem;
   -webkit-transition: all 200ms;
   transition: all 200ms;
@@ -74,11 +73,13 @@ a:hover, button:hover {
 
 .btn_primary {
   background: transparent url(../img/button-red.png) center center no-repeat;
+  background-size: contain;
   color: #e00606;
 }
 
 .btn_light {
   background: transparent url(../img/button-light.png) center center no-repeat;
+  background-size: contain;
   color: #fdfdfd;
 }
 
@@ -106,6 +107,7 @@ h4 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  padding: 0;
   border: none;
   background: none;
   -webkit-transform: scale(1);
@@ -148,6 +150,8 @@ h4 {
 }
 
 .header__logo {
+  height: 6rem;
+  width: 22rem;
   margin-left: 9rem;
   margin-right: 1rem;
   -webkit-transform: scale(1);
@@ -161,6 +165,11 @@ h4 {
           transform: scale(1.05);
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
+}
+
+.header__logo img {
+  height: 100%;
+  width: 100%;
 }
 
 .header__phone {
@@ -274,24 +283,28 @@ h4 {
 .header__bottom__sheet {
   top: -20rem;
   left: -26rem;
+  height: 85rem;
   width: 97rem;
 }
 
 .header__bottom__laptop {
   top: 0;
   left: 2rem;
+  height: 34rem;
   width: 50rem;
 }
 
 .header__bottom__arrow {
   top: 16rem;
   left: -10rem;
+  height: 13rem;
   width: 7.5rem;
 }
 
 .header__bottom__pen {
   top: 5rem;
   right: 3rem;
+  height: 12rem;
   width: 10rem;
 }
 
@@ -389,7 +402,7 @@ h4 {
 
 .about__img_newspaper {
   right: 0;
-  bottom: 2.2rem;
+  bottom: 2rem;
   width: 94rem;
 }
 
@@ -539,6 +552,8 @@ h4 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  height: 3rem;
+  width: 98rem;
 }
 
 .portfolio {
@@ -1114,6 +1129,16 @@ h4 {
   margin: 2rem 6rem 0 0;
 }
 
+.feedback__slider__arrow {
+  height: 8rem;
+  width: 8rem;
+}
+
+.feedback__slider__arrow img {
+  height: 100%;
+  width: 100%;
+}
+
 .feedback__slider__arrow_prev {
   left: 20rem;
 }
@@ -1123,7 +1148,7 @@ h4 {
 }
 
 .main {
-  padding: 15rem 11rem 20rem 0;
+  padding: 15rem 0 20rem;
   margin-top: -15rem;
   background: transparent url(../img/prices/bg-prices.png) top center no-repeat;
   background-size: 100% 100%;
@@ -1133,7 +1158,7 @@ h4 {
 }
 
 .main__text {
-  margin: 2rem 0;
+  margin: 2rem 10rem;
 }
 
 .fill-out {
@@ -1201,12 +1226,16 @@ h4 {
   position: absolute;
   top: 6rem;
   right: 6rem;
+  height: 13rem;
+  width: 6.5rem;
 }
 
 .fill-out__hand {
   position: absolute;
   top: 22rem;
   left: 0;
+  height: 44rem;
+  width: 85rem;
 }
 
 .footer {
@@ -1251,6 +1280,11 @@ h4 {
           transform: scale(1.05);
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
+}
+
+.footer__icons__img img {
+  height: 100%;
+  width: 100%;
 }
 
 .footer__contacts {
@@ -1366,6 +1400,32 @@ h4 {
   top: 10rem;
   right: 8rem;
   height: 9rem;
+}
+
+/*-----1600px - 1699px-----*/
+@media (max-width: 1699px) {
+  .about__img_wire {
+    right: 142rem;
+  }
+  .about__img_hand {
+    right: 0;
+  }
+  .about__img_newspaper {
+    right: -25rem;
+  }
+  .about__img_scotch {
+    right: 59rem;
+  }
+  .fill-out__hand {
+    left: -5rem;
+  }
+}
+
+/*-----1400px - 1599px-----*/
+@media (max-width: 1599px) {
+  .fill-out__hand {
+    left: -20rem;
+  }
 }
 
 /*-----1200px - 1399px-----*/
