@@ -54,5 +54,22 @@ $(document).ready(function () {
 		$('.popup').fadeOut();
 	});
 
+    /* Mobile menu */
+    $(".menu-btn").click(function () {
+        if ($("#menu-btn").hasClass("menu-btn_burger")) {
+            $(".header__top__menu").addClass("header__top__menu_show");
+            $("#menu-btn").removeClass("menu-btn_burger");
+            $("#menu-btn").addClass("menu-btn_cross");
+            return
+        };
+        if ($("#menu-btn").hasClass("menu-btn_cross")) {
+            $(".header__top__menu").removeClass("header__top__menu_show");
+            $("#menu-btn").addClass("menu-btn_burger");
+            $("#menu-btn").removeClass("menu-btn_cross");
+            return
+        };
 
+      });
+
+    //   menu-btn_burger
 });

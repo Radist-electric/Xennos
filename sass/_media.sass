@@ -36,8 +36,99 @@
 
 /*-----576px - 767px-----*/
 @media (max-width:767px)
-
-
+    .header
+        a
+            font-size: 2.2rem
+        &__top
+            &__menu
+                width: 110rem
+        &__logo
+            margin-left: 3rem
+    .nav
+        &__item
+            margin: 0 1.8rem
 
 /*-----0px - 575px-----*/
 @media (max-width:575px)
+    h1
+        line-height: 5.7rem
+    .btn
+        display: block
+        margin: 0 auto
+    .menu-btn
+        z-index: 6
+        display: block
+    .header
+        height: 86rem
+        background: #fff url(../img/bg-copy-book.png) top center repeat
+        &__top
+            justify-content: center
+            &__menu
+                z-index: 5
+                overflow-x: hidden
+                position: absolute
+                top: 0
+                left: -100%
+                flex-direction: column
+                justify-content: flex-start
+                height: 100vh
+                width: 100%
+                padding-top: 10rem
+                background-color: rgba(255, 255, 255, 0.9)
+                text-align: center
+                a
+                    font-size: 4rem
+                    line-height: 8rem
+                &_show
+                    left: 0%
+        &__title
+            margin: 3rem 8rem 0
+            padding-right: 0
+            text-align: center
+            img
+                right: -3rem
+                bottom: 14rem
+        &__bottom
+            &__img
+                display: none
+            &__arrow
+                display: none
+            &__list
+                padding-left: 5rem
+            &__pen
+                top: -14rem
+                right: 3rem
+                height: 8rem
+                width: 7rem
+        &__phone
+            &::after
+               bottom: 1.5rem 
+        &__icons
+            margin: 5rem 0
+            img
+                height: 8rem
+                margin: 0 2rem
+    .nav
+        flex-direction: column
+        justify-content: space-between
+        &__item
+            display: flex
+            justify-content: center
+            a
+                &::after
+                    bottom: 1.5rem
+    .about
+        height: 90rem
+        margin-top: -12rem
+        padding-top: 10rem
+        background: transparent url(../img/about/bg-about-mobile.png) top center no-repeat
+        background-size: 100% 100%
+        h2
+            width: 28rem
+            line-height: 5rem
+        &__img
+            &_wire, &_hand, &_newspaper, &_scotch
+                    display: none
+        &__content
+            width: 100%
+            padding: 0 6rem

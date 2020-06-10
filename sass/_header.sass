@@ -1,4 +1,5 @@
 .header
+    position: relative
     height: 77rem
     background: #fff url(../img/header/bg-header.png) top center no-repeat
     background-size: cover
@@ -14,11 +15,17 @@
         justify-content: space-between
         align-items: center
         height: 16rem
+        &__menu
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 105rem
+            transition: 0.5s
     &__logo
         height: 6rem
         width: 22rem
         margin-left: 9rem
-        margin-right: 1rem
+        // margin-right: 1rem
         transform: scale(1.0)
         transition: all 300ms
         &:hover
@@ -60,7 +67,7 @@
         text-align: right
         img
             position: absolute
-            top: -3rem
+            bottom: 4rem
             right: 0
             height: 3.4rem
     &__bottom
@@ -120,6 +127,7 @@
         margin: 0 2.4rem
         a
             position: relative
+            line-height: 4rem
             &::after
                 content: ''
                 position: absolute
@@ -134,6 +142,38 @@
                 &::after
                     transform: scaleX(1)
 
+.menu-btn
+	z-index: 3
+	position: absolute
+	display: none
+	top: 2rem
+	height: 2.5rem
+	width: 5.5rem
+	transition: all 500ms
+	span, span::before, span::after
+		position: absolute
+		top: 50%
+		width: 100%
+		height: 0.5rem
+		background-color: $primary-color
+		transition: 0.5s
+	span::before, span::after
+		content: ''
+		display: block
+	&_burger
+		right: 2rem
+		span::before
+			transform: translateY(-1.5rem)
+		span::after
+			transform: translateY(1rem)
+	&_cross
+		right: 2rem
+		span
+			height: 0
+		span::before
+			transform: rotate(45deg)
+		span::after
+ 			transform: rotate(-45deg)
 
 
     
