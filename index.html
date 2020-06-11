@@ -39,9 +39,12 @@
                 .clientWidth;
             setHtmlSize();
         });
+        window.addEventListener("orientationchange", function () {
+            setHtmlSize();
+        });
     </script>
     <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet" href="css/style.css?v0.95">
+    <link rel="stylesheet" href="css/style.css?v1.04">
 </head>
 
 <body>
@@ -597,7 +600,7 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js?v1.0"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
 
