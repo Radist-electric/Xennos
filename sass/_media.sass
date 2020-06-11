@@ -28,7 +28,24 @@
 
 /*-----992px - 1199px-----*/
 @media (max-width:1199px)
-
+    .portfolio
+        &__wire
+            display: none
+        &__list
+            &__item
+                &__content
+                    margin: 0 auto
+            &__arrow
+                top: 30%
+                height: 5rem
+                width: 5rem
+                img
+                    height: 100%
+                    width: 100%
+                &_prev
+                    left: 2rem
+                &_next
+                    right: 2rem
 
 /*-----768px - 991px-----*/
 @media (max-width:991px)
@@ -47,6 +64,7 @@
     .nav
         &__item
             margin: 0 1.8rem
+
 
 /*-----0px - 575px-----*/
 @media (max-width:575px)
@@ -134,6 +152,7 @@
             padding: 0 6rem
             .btn
                 background: transparent url(../img/button-red.png) center center no-repeat
+                background-size: contain
                 color: $secondary-color
         &__discount
             margin: 15rem 0 2rem
@@ -144,7 +163,319 @@
                 display: block
 
     .need
+        height: initial
         padding-top: 45rem
+        padding-bottom: 20rem
+        &__title
+            margin-bottom: 0
+        &__content
+            height: initial
+            width: 100%
+            background: none
+            li
+                flex-direction: column
+                width: 100%
+                p
+                    padding: 0 5.5rem
+                    margin-top: 2rem
+                &:nth-child(odd)
+                    padding-left: 0
+                    p
+                        width: 100%
+                &:nth-child(even)
+                    padding-left: 0
+                    p
+                        width: 100%
+            &__img
+                display: none
+            &__picture
+                display: block
+                height: 25rem
+                max-width: 100%
+        &__btn
+            margin-top: 5rem
+
+    .work
+        height: 69rem
+        margin-top: -18rem
+        padding-top: 11rem
+        background: transparent url(../img/work/bg-work-mobile.png) top center no-repeat
+        &__title
+            margin-bottom: 2rem
+        &__list
+            display: none
+            &_mobile
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                height: 45rem
+                width: 40rem
+                margin: 0 auto
+                padding-top: 10rem
+                background: transparent url(../img/work/work-sticker-mobile.png) center center no-repeat
+                background-size: contain
+                p
+                    line-height: 4rem
+    .portfolio
+        height: initial
+        background: none
+        &__title
+            margin-bottom: 4rem
+        &__list
+            &__arrow
+                top: 83%
+                height: 3.5rem
+                width: 3.5rem
+                &_prev
+                    left: 11rem
+                &_next
+                    right: 11rem 
+    .dev
+        height: initial
+        &__title
+            margin: 3rem auto
+        &__text
+            margin: 1px 5rem
+            line-height: 3.5rem
+            text-align: left
+    .prices
+        height: initial
+        padding-top: 0
+        margin-top: 3.5rem
+        background: none
+        color: $primary-color
+        &__grid
+            display: none
+        &__block1, &__add
+            &__scotch
+                display: none
+        &__block1
+            flex-direction: column
+            padding: 0
+            &__title
+                display: inline
+                height: initial
+                padding: 0
+                color: $secondary-color
+            &__item
+                position: relative
+                width: 100%
+                padding: 3.5rem 0
+                text-align: center
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 0
+                    top: 0
+                    height: 0.5rem
+                    width: 100%
+                    background: transparent url(../img/prices/prices-line-mobile.png) center center no-repeat
+                    background-size: contain
+            &__desc
+                height: initial
+                padding: 3.5rem 5rem 2rem
+            &__list
+                padding-left: 10rem
+                margin-top: 2rem
+                text-align: left
+        &__add
+            &__title, &__header
+                display: none
+        &__block2
+            flex-direction: column
+            padding: 0
+            &__item
+                position: relative
+                width: 100%
+                text-align: center
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 0
+                    top: 0
+                    height: 0.5rem
+                    width: 100%
+                    background: transparent url(../img/prices/prices-line-mobile.png) center center no-repeat
+                    background-size: contain
+                &:first-child
+                    align-items: center
+                    .prices__block2__price
+                        justify-content: center
+                        padding-right: 0
+                &:last-child
+                    align-items: center
+                    .prices__block2__price
+                        justify-content: center
+                        padding-left: 0
+            &__top
+                height: initial
+                width: 100%
+            &__title
+                display: inline
+                height: initial
+                width: 100%
+                padding: 3.5rem 0
+                text-align: center
+            &__list
+                padding-left: 10rem
+                margin-top: 2rem
+                padding-top: 0
+                text-align: left
+            &__price
+                height: initial
+                padding: 0
+                margin: 3.5rem 0
+        &__buttons
+            position: relative
+            flex-direction: column
+            padding: 5rem 0
+            &::after
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                height: 0.5rem
+                width: 100%
+                background: transparent url(../img/prices/prices-line-mobile.png) center center no-repeat
+                background-size: contain
+            &_left, &_right
+                margin: 1.5rem 0
+    .advance
+        height: initial
+        margin-top: 0
+        padding-top: 0
+        background: none
+        &__newspaper
+            display: none
+        &__list
+            flex-direction: column
+            justify-content: flex-start
+            &__title
+                margin-bottom: 0
+            &__item
+                margin-bottom: 5rem
+            &__content
+                margin: 2rem auto
+    .why
+        height: initial
+        margin-top: 0
+        padding-top: 0
+        background: none
+        &__title
+            width: 100%
+            margin: 5rem 0
+            padding: 0 2rem
+        &__block
+            height: initial
+            width: 100%
+            padding: 0 5rem
+            background: none
+            &__item
+                display: block
+                height: initial
+                width: 100%
+                margin: 2rem 0
+            &__icon
+                position: initial
+                float: left
+                transform: none
+                margin-right: 2rem
+            &__text
+                display: inline
+                margin-left: 0
+                &::after
+                    display: none
+
+            &__scotch, &__clip
+                display: none
+    .feedback
+        height: initial
+        margin-top: 0
+        padding-bottom: 8rem
+        background: none
+        &__slider
+            margin-top: 4rem
+            &__content
+                height: 32rem
+                width: 45rem
+                padding: 6rem 6rem 0
+                font-size: 1.8rem
+                line-height: 2rem
+            &__photo
+                float: right
+                height: 7rem
+                width: 7rem
+            &__text
+                margin: 2rem 0 0
+            &__arrow
+                height: 5rem
+                width: 5rem
+                top: 100%
+                &_prev
+                    left: 21rem
+                &_next
+                    right: 21rem
+    .main
+        padding: 0
+        margin-top: 0
+        background: none
+        color: $primary-color
+        &__text
+            margin: 2rem 5rem   
+    .fill-out
+        height: 54rem
+        margin-top: 0
+        padding-top: 12rem
+        background: transparent url(../img/fill-out/bg-fill-out-mobile.png) top center no-repeat
+        background-size: 100% 100%
+        &__form
+            float: none
+            height: initial
+            width: 100%
+            margin: 0
+            h4
+                margin: 0 4.5rem
+                font-size: 2rem
+            form
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                margin-top: 6rem
+            input
+                height: 5rem
+                width: 25rem
+                margin: 1rem 7.5rem
+                font-size: 2.2rem
+                &::placeholder
+                    font-size: 1.6rem
+            button
+                height: 6rem
+                width: 30rem
+                margin: 0 5.5rem
+                font-size: 3.2rem
+            &__arrow
+                top: 9rem
+                right: 3rem
+                height: 8rem
+                width: 4rem
+        &__hand
+            top: 26rem
+            left: -8rem
+            transform: rotate(-36deg)
+            height: 17rem
+            width: 33rem
+    .footer
+        padding: 6rem 0
+        &__icons
+            display: flex
+            justify-content: center
+            &__img
+                height: 8rem
+                width: 8rem
+                margin: 0 2.5rem
+        &__address
+            font-size: 1.8rem
 
 
     .popup
