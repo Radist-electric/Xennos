@@ -44,10 +44,6 @@ a:hover, button:hover {
   cursor: url(../img/cursor.png), default;
 }
 
-section {
-  overflow-x: hidden;
-}
-
 .container {
   width: 140rem;
   margin: 0 auto;
@@ -129,7 +125,7 @@ h4 {
   position: relative;
   height: 77rem;
   background: #fff url(../img/header/bg-header.png) top center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: #243b97;
 }
 
@@ -423,10 +419,10 @@ h4 {
   z-index: 2;
   position: relative;
   height: 96rem;
-  margin-top: -20rem;
+  margin-top: -22rem;
   padding-top: 20rem;
   background: transparent url(../img/about/bg-about.png) top center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   font-size: 3.5rem;
   line-height: 4rem;
   color: #fdfdfd;
@@ -489,6 +485,7 @@ h4 {
 .about__img_newspaper {
   right: 0;
   bottom: 2rem;
+  height: 70rem;
   width: 94rem;
 }
 
@@ -555,6 +552,7 @@ h4 {
 .need__content__img_scotch {
   top: 73rem;
   left: 2rem;
+  height: 22rem;
   width: 7.5rem;
   -webkit-transform: rotate(-65deg);
           transform: rotate(-65deg);
@@ -563,6 +561,7 @@ h4 {
 .need__content__img_cross {
   top: -12rem;
   right: 1rem;
+  height: 23rem;
   width: 22rem;
 }
 
@@ -581,7 +580,7 @@ h4 {
   margin-top: -20rem;
   padding-top: 24rem;
   background: transparent url(../img/work/bg-work.png) top center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .work__title {
@@ -657,7 +656,7 @@ h4 {
   padding-top: 32rem;
   margin-top: -27rem;
   background: transparent url(../img/portfolio/bg-portfolio.png) top center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .portfolio__title {
@@ -733,7 +732,7 @@ h4 {
   height: 202rem;
   padding-top: 13rem;
   background: transparent url(../img/prices/bg-prices.png) top center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: #fdfdfd;
   font-size: 2.8rem;
   line-height: 3.5rem;
@@ -834,6 +833,8 @@ h4 {
   position: absolute;
   top: -12rem;
   right: 5rem;
+  height: 22rem;
+  width: 7.5rem;
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
 }
@@ -894,6 +895,8 @@ h4 {
   position: absolute;
   top: 29rem;
   left: 3rem;
+  height: 23rem;
+  width: 22rem;
   -webkit-transform: rotate(-23deg);
           transform: rotate(-23deg);
 }
@@ -1270,7 +1273,7 @@ h4 {
 .fill-out {
   position: relative;
   height: 82rem;
-  margin-top: -20rem;
+  margin-top: -22rem;
   background: transparent url(../img/fill-out/bg-fill-out.png) top center no-repeat;
   background-size: cover;
 }
@@ -1523,20 +1526,32 @@ h4 {
     right: 0;
   }
   .about__img_newspaper {
-    right: -25rem;
+    height: 62rem;
+    width: 83rem;
   }
   .about__img_scotch {
     right: 59rem;
+  }
+  .advance__newspaper {
+    display: none;
   }
   .fill-out__hand {
     left: -5rem;
   }
 }
 
-/*-----1400px - 1599px-----*/
+/*-----1500px - 1599px-----*/
 @media (max-width: 1599px) {
   .fill-out__hand {
     left: -20rem;
+  }
+}
+
+/*-----1400px - 1499px-----*/
+@media (max-width: 1499px) {
+  .about__img_newspaper {
+    height: 57rem;
+    width: 78rem;
   }
 }
 
@@ -1544,6 +1559,10 @@ h4 {
 @media (max-width: 1399px) {
   .container {
     width: 100%;
+  }
+  .about__img_newspaper {
+    height: 62rem;
+    width: 80rem;
   }
 }
 
@@ -1692,7 +1711,7 @@ h4 {
     bottom: 1.5rem;
   }
   .about {
-    height: 90rem;
+    height: 96rem;
     margin-top: -12rem;
     padding-top: 10rem;
     background: transparent url(../img/about/bg-about-mobile.png) top center no-repeat;
@@ -1715,7 +1734,7 @@ h4 {
     color: #e00606;
   }
   .about__discount {
-    margin: 15rem 0 2rem;
+    margin: 24rem 0 2rem;
     color: #e00606;
   }
   .about__discount_desktop {

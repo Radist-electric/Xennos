@@ -7,24 +7,41 @@
             &_hand
                 right: 0
             &_newspaper
-                right: -25rem
+                height: 62rem
+                width: 83rem
             &_scotch
                 right: 59rem
+    .advance
+        &__newspaper
+            display: none
     .fill-out
         &__hand
             left: -5rem
 
-/*-----1400px - 1599px-----*/
+/*-----1500px - 1599px-----*/
 @media (max-width:1599px) 
     .fill-out
         &__hand
             left: -20rem
+
+/*-----1400px - 1499px-----*/
+@media (max-width:1499px) 
+    .about
+        &__img
+            &_newspaper
+                height: 57rem
+                width: 78rem
 
 
 /*-----1200px - 1399px-----*/
 @media (max-width:1399px)
     .container
         width: 100%
+    .about
+        &__img
+            &_newspaper
+                height: 62rem
+                width: 80rem
 
 /*-----992px - 1199px-----*/
 @media (max-width:1199px)
@@ -136,7 +153,7 @@
                 &::after
                     bottom: 1.5rem
     .about
-        height: 90rem
+        height: 96rem
         margin-top: -12rem
         padding-top: 10rem
         background: transparent url(../img/about/bg-about-mobile.png) top center no-repeat
@@ -155,7 +172,7 @@
                 background-size: contain
                 color: $secondary-color
         &__discount
-            margin: 15rem 0 2rem
+            margin: 24rem 0 2rem
             color: $secondary-color
             &_desktop
                 display: none
