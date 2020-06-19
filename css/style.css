@@ -2003,6 +2003,9 @@ h4 {
     padding-top: 0;
     background: none;
   }
+  .advance__title {
+    padding: 0 2rem;
+  }
   .advance__newspaper {
     display: none;
   }
@@ -2203,3 +2206,4 @@ h4 {
     right: 1rem;
   }
 }
+/*# sourceMappingURL=style.css.map */
